@@ -15,6 +15,7 @@ namespace plannning_ligue
         public Form1()
         {
             InitializeComponent();
+            InitaliseComboBox();
         }
 
         public void InitaliseComboBox()
