@@ -30,7 +30,7 @@ namespace plannning_ligue
 
             Type.Items.Add("Initiation");
             Type.Items.Add("Loisir");
-            Type.Items.Add("Competition");
+            Type.Items.Add("Compétition");
 
             for(int i=0;i<24;i++)
             {
