@@ -39,13 +39,15 @@
             this.label8 = new System.Windows.Forms.Label();
             this.JourFin = new System.Windows.Forms.DateTimePicker();
             this.JourDebut = new System.Windows.Forms.DateTimePicker();
-            this.HeureFin = new System.Windows.Forms.TextBox();
-            this.HeureDebut = new System.Windows.Forms.TextBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.Type = new System.Windows.Forms.ComboBox();
             this.ChoixJour = new System.Windows.Forms.ComboBox();
             this.Description = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.HeureD = new System.Windows.Forms.ComboBox();
+            this.MinuteD = new System.Windows.Forms.ComboBox();
+            this.HeureF = new System.Windows.Forms.ComboBox();
+            this.MinuteF = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -136,20 +138,6 @@
             this.JourDebut.Size = new System.Drawing.Size(188, 20);
             this.JourDebut.TabIndex = 9;
             // 
-            // HeureFin
-            // 
-            this.HeureFin.Location = new System.Drawing.Point(181, 322);
-            this.HeureFin.Name = "HeureFin";
-            this.HeureFin.Size = new System.Drawing.Size(188, 20);
-            this.HeureFin.TabIndex = 10;
-            // 
-            // HeureDebut
-            // 
-            this.HeureDebut.Location = new System.Drawing.Point(181, 274);
-            this.HeureDebut.Name = "HeureDebut";
-            this.HeureDebut.Size = new System.Drawing.Size(188, 20);
-            this.HeureDebut.TabIndex = 11;
-            // 
             // Type
             // 
             this.Type.FormattingEnabled = true;
@@ -181,18 +169,53 @@
             this.button1.TabIndex = 15;
             this.button1.Text = "Valider";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // HeureD
+            // 
+            this.HeureD.FormattingEnabled = true;
+            this.HeureD.Location = new System.Drawing.Point(181, 274);
+            this.HeureD.Name = "HeureD";
+            this.HeureD.Size = new System.Drawing.Size(75, 21);
+            this.HeureD.TabIndex = 16;
+            // 
+            // MinuteD
+            // 
+            this.MinuteD.FormattingEnabled = true;
+            this.MinuteD.Location = new System.Drawing.Point(285, 274);
+            this.MinuteD.Name = "MinuteD";
+            this.MinuteD.Size = new System.Drawing.Size(84, 21);
+            this.MinuteD.TabIndex = 17;
+            // 
+            // HeureF
+            // 
+            this.HeureF.FormattingEnabled = true;
+            this.HeureF.Location = new System.Drawing.Point(181, 314);
+            this.HeureF.Name = "HeureF";
+            this.HeureF.Size = new System.Drawing.Size(75, 21);
+            this.HeureF.TabIndex = 18;
+            // 
+            // MinuteF
+            // 
+            this.MinuteF.FormattingEnabled = true;
+            this.MinuteF.Location = new System.Drawing.Point(285, 314);
+            this.MinuteF.Name = "MinuteF";
+            this.MinuteF.Size = new System.Drawing.Size(84, 21);
+            this.MinuteF.TabIndex = 19;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(819, 457);
+            this.Controls.Add(this.MinuteF);
+            this.Controls.Add(this.HeureF);
+            this.Controls.Add(this.MinuteD);
+            this.Controls.Add(this.HeureD);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Description);
             this.Controls.Add(this.ChoixJour);
             this.Controls.Add(this.Type);
-            this.Controls.Add(this.HeureDebut);
-            this.Controls.Add(this.HeureFin);
             this.Controls.Add(this.JourDebut);
             this.Controls.Add(this.JourFin);
             this.Controls.Add(this.label8);
@@ -223,13 +246,15 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker JourFin;
         private System.Windows.Forms.DateTimePicker JourDebut;
-        private System.Windows.Forms.TextBox HeureFin;
-        private System.Windows.Forms.TextBox HeureDebut;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.ComboBox Type;
         private System.Windows.Forms.ComboBox ChoixJour;
         private System.Windows.Forms.TextBox Description;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox HeureD;
+        private System.Windows.Forms.ComboBox MinuteD;
+        private System.Windows.Forms.ComboBox HeureF;
+        private System.Windows.Forms.ComboBox MinuteF;
     }
 }
 

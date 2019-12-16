@@ -16,5 +16,37 @@ namespace plannning_ligue
         {
             InitializeComponent();
         }
+
+        public void InitaliseComboBox()
+        {
+            ChoixJour.Items.Add("Lundi");
+            ChoixJour.Items.Add("Mardi");
+            ChoixJour.Items.Add("Mercredi");
+            ChoixJour.Items.Add("Jeudi");
+            ChoixJour.Items.Add("Vendredi");
+            ChoixJour.Items.Add("Samedi");
+            ChoixJour.Items.Add("Dimanche");
+
+            Type.Items.Add("Initiation");
+            Type.Items.Add("Loisir");
+            Type.Items.Add("Competition");
+
+            for(int i=0;i<24;i++)
+            {
+                HeureD.Items.Add(i);
+                HeureF.Items.Add(i);
+            }
+
+            for(int i=0;i<60;i=i+15)
+            {
+                MinuteD.Items.Add(i);
+                MinuteF.Items.Add(i);
+            }
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
