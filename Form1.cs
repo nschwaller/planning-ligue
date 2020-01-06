@@ -20,14 +20,6 @@ namespace plannning_ligue
 
         public void InitaliseComboBox()
         {
-            ChoixJour.Items.Add("Lundi");
-            ChoixJour.Items.Add("Mardi");
-            ChoixJour.Items.Add("Mercredi");
-            ChoixJour.Items.Add("Jeudi");
-            ChoixJour.Items.Add("Vendredi");
-            ChoixJour.Items.Add("Samedi");
-            ChoixJour.Items.Add("Dimanche");
-
             Type.Items.Add("Initiation");
             Type.Items.Add("Loisir");
             Type.Items.Add("Compétition");
@@ -47,7 +39,7 @@ namespace plannning_ligue
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            
+            MessageBox.Show(JourDebut.Value.DayOfWeek.ToString());
         }
     }
 }

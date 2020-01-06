@@ -12,6 +12,7 @@ namespace plannning_ligue
         {
             // foreach ou for a faire ....
             Sql Unnom = new Sql();
+            
         }
         public string switchFormatDate(DateTime Date)
         { 
