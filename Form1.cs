@@ -39,9 +39,16 @@ namespace plannning_ligue
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(JourDebut.Value.DayOfWeek.ToString());
+            string  jour=JourDebut.Value.DayOfWeek.ToString();
             MessageBox.Show(JourDebut.Value.ToString("yyyy/MM/dd"));
 
+            
+            DateTime d = JourDebut.Value.Date;
+            MessageBox.Show(d.ToString());
+
+            d = d.AddDays(7);
+
+            MessageBox.Show(d.ToString());
         }
     }
 }
