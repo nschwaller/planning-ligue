@@ -39,16 +39,13 @@ namespace plannning_ligue
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            //MessageBox.Show(HeureD.SelectedItem.ToString());
             string  jour=JourDebut.Value.DayOfWeek.ToString();
-            MessageBox.Show(JourDebut.Value.ToString("yyyy/MM/dd"));
-
-            
-            DateTime d = JourDebut.Value.Date;
-            MessageBox.Show(d.ToString());
-
-            d = d.AddDays(7);
-
-            MessageBox.Show(d.ToString());
+            Seance s = new Seance();
+            s.ajout(jour, JourDebut.Value, JourFin.Value,HeureD.SelectedItem.ToString(), MinuteD.SelectedItem.ToString(), HeureF.SelectedItem.ToString(), MinuteF.SelectedItem.ToString(), Type.SelectedItem.ToString(), Description.Text);
+            MessageBox.Show("Toute vos séances ont bien été enregistré");
+            InitaliseComboBox();
         }
+
     }
 }

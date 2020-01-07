@@ -11,9 +11,9 @@ namespace plannning_ligue
     class Sql
     {
         private string IP = "172.19.0.22";
-        private string USER = "root";
+        private string USER = "nadia";
         private string MDP = "0550002D";
-        private string DATABASE = "GSB";
+        private string DATABASE = "planning-ligue";
         MySqlConnection conn;
 
 
