@@ -73,7 +73,7 @@ namespace plannning_ligue
             TimeSpan Diff = fin - deb;
             int difference = Diff.Days / 7;
 
-            for (int i = 0; i < difference; i++)
+            for (int i = 0; i <= difference; i++)
             {
                 DateTime Debut = JourDebut.AddDays(7 * i);
                 Unnom.ajouterSeance(jour, desc, Debut.ToString("yyyy-MM-dd"), JourFin.ToString("yyyy-MM-dd"), HeureD, MinuteD, HeureF, MinuteF, Type);

@@ -26,7 +26,7 @@ namespace plannning_ligue
 
         public void ajouterSeance(string jour,string desc, string dateDeb , string dateFin,string heureDeb,string minuteDeb, string heureFin, string minuteFin, string catego)
         {
-            string req = "INSERT INTO `seance` (`jour`,`descriptif`,`debut`,`fin`,`la_categorie`) VALUES (" + jour + "," + desc + ","+ dateDeb+ " " + heureDeb+":"+ minuteDeb +"," + dateFin + " " + heureFin + ":" + minuteFin + ",(SELECT id FROM categorie WHERE descriptif = '"+catego+"'))";
+            string req = "INSERT INTO `seance` (`jour`,`descriptif`,`debut`,`fin`,`la_categorie`) VALUES ('" + jour + "','" + desc + "','"+ dateDeb+ " " + heureDeb+":"+ minuteDeb +"','" + dateFin + " " + heureFin + ":" + minuteFin + "',(SELECT id FROM categorie WHERE descriptif = '"+catego+"'))";
             MySqlCommand larequete = new MySqlCommand(req, this.conn);
             this.conn.Open();
             MySqlDataReader Donner = larequete.ExecuteReader();
